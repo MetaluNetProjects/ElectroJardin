@@ -1,16 +1,23 @@
-# Le Présent
-## Musée de l'Institut Louis Pasteur Lille
-### directed by Les Yeux d'Argos <http://lesyeuxdargos.com>
+# Electro-Jardin
+## la Mouchonnière, SECLIN, 2017
 
-Autonomous randomly changing dimmer for 1 DC motor and 4 10W LEDs.
-The motor moves a 3-meter height DNA-like metal spiral.
+Autonomous battery-powered music workstation, using sounds created by local inhabitants.
 
-2 pots allow to set the speed of random change and the max speed of the motor.
+1 rPi with Pd on a read-only raspbian OS  
+1 Pied de Fraise  
+2 Fraise Versa1.0
 
-- 1 Fraise Versa1.0 board
-- 1 Pololu's VNH5019 carrier board
-- 4 sparkfun's FemtoBuck LED Drivers
+2 pots: volume / tempo
 
-program/test patch included.
+12 led-push-buttons:
 
-### metalu.net 2017
+- chanson1 / chanson2
+- rythme1 / rythme2
+- prose1 / prose2
+- note1 / note2
+- synth /bass
+- kick / snare
+
+The soundbank is not included
+
+### Al1&Ant1, metalu.net 2017
