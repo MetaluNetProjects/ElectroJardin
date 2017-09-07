@@ -1,0 +1,17 @@
+#N canvas 7 74 540 300 10;
+#X obj 101 117 table notelength-\$1 \$2;
+#X obj 102 75 clone -s 1 notetable \$2 \$1;
+#X obj 99 223 tabread notelength-\$1;
+#X floatatom 99 245 8 0 0 0 - - -, f 8;
+#X obj 99 201 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 100 148 table noteaccord-\$1 \$2;
+#X obj 333 148 r DATASDIR;
+#X msg 333 194 read \$2/NOTES/\$1/notes.txt;
+#X obj 333 170 list prepend \$1;
+#X obj 333 218 s noteaccord-\$1;
+#X connect 2 0 3 0;
+#X connect 4 0 2 0;
+#X connect 6 0 8 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;

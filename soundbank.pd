@@ -1,0 +1,9 @@
+#N canvas 11 74 540 300 10;
+#X floatatom 99 245 8 0 0 0 - - -, f 8;
+#X obj 99 201 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 101 138 table soundlength-\$1/\$2 \$3;
+#X obj 99 223 tabread soundlength-\$1/\$2;
+#X obj 99 78 clone -s 1 soundtable \$3 \$1/\$2;
+#X connect 1 0 3 0;
+#X connect 3 0 0 0;
